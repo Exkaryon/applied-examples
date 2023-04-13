@@ -1,0 +1,26 @@
+{
+  "name": "matrix-view",
+  "version": "1.0.0",
+  "description": "images in the form of a matrix",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "serve": "webpack-dev-server --mode development",
+    "serve-open": "webpack-dev-server --mode development --open"
+  },
+  "author": "PaulZ",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  }
+}
