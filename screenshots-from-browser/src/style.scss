@@ -1,0 +1,74 @@
+body {
+    font: 15px Arial;
+    background: #000;
+}
+
+button {
+    font: 15px Arial;
+    padding: 4px 5px;
+    color: #fff;
+    border:solid 1px #fff9;
+    opacity:0.5;
+    box-shadow: 0 0 25px #000, 0 0 14px #000, 0 0 5px #000;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
+    &:active {
+        bottom: 9px;
+    }
+}
+
+.screenshotbox {
+    display: flex;
+    justify-content: center;
+    > div {
+        width: 500px;
+        border:solid 1px #454545;
+        margin: 10px;
+        padding-bottom: 28px;
+        position: relative;
+    }
+    canvas {
+        display: none;
+    }
+    button {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__screen {
+        button {
+            background:#050;
+        }
+        video {
+            width: 500px;
+        }
+    }
+
+    &__output {
+        button {
+            background:#500;
+        }
+        img {
+            display: block;
+            width: 500px;
+        }
+    }
+}
+
+#start-stop {
+    text-align: center;
+    .log {
+        max-width: 500px;
+        margin: 10px 0;
+    }
+    button {
+        margin-top: 10px;
+        border:solid 1px #fff9;
+        background: #059;
+        padding: 9px 14px;
+    }
+}
