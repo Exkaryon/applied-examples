@@ -1,0 +1,51 @@
+body {
+    background: #000;
+    height: 100vh;
+    margin: 0;
+}
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    flex-direction: column;
+}
+#container video {
+    border: solid 1px #fff;
+}
+#container button {
+    background: none;
+    border: none;
+    margin-top: 20px;
+}
+#container button::before {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font: 16px Verdana;
+    text-shadow: 1px 1px 2px #333;
+    cursor: pointer;
+}
+#container button[data-action="play"]::before {
+    content: 'Play';
+    background: linear-gradient(0deg, #090, #0f0);
+}
+#container button[data-action="pause"]::before {
+    content: 'Pause';
+    background: linear-gradient(0deg, #f50, #f90);
+}
+#container button[data-action="save"]::before {
+    content: 'Save';
+    background: linear-gradient(0deg, #059, #079);
+}
+#container button:hover {
+    filter: brightness(110%);
+}
+#container button:active {
+    top: 1px;
+}
+#container canvas {
+    margin-top: 20px;
+    border: solid 1px #fff;
+}
